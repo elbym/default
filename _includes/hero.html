@@ -1,0 +1,27 @@
+	<div class="flexslider">
+	  <ul class="slides">
+	    <li>
+	      <img src="http://lorempixel.com/1920/180/nature/1" />
+	    </li>
+	    <li>
+	      <img src="http://lorempixel.com/1920/180/nature/2" />
+	    </li>
+	    <li>
+	      <img src="http://lorempixel.com/1920/180/nature/3" />
+	    </li>
+	    <li>
+	      <img src="http://lorempixel.com/1920/180/nature/4" />
+	    </li>
+	  </ul>
+	</div>
+
+
+<ul>
+  {% for p in site.pages | sort:weight %}
+    <li>
+      <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+        {{ p.navname }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

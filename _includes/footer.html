@@ -1,0 +1,34 @@
+<footer class="site-footer">
+  <div class="site-width">
+
+    <div class="grid group">
+
+      <div class="footer-contact grid-1-3">
+        <h4>Vera eine Nachricht schreiben</h4>
+
+        <a href="mailto:vera@vera-stahl.de" class="contact-email">
+          <svg>
+            <use xlink:href="#shape-email" />
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/vera.bothe" class="contact-facebook">
+          <svg>
+            <use xlink:href="#shape-facebook" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer-about grid-2-3">
+        Designed von <a href="https://twitter.com/elbym">Elby</a> . Gemacht mit Jekyll, Compass, Feenstaub und Liebe.
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+{% if site.baseurl == "" %}
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider-min.js"></script>
+  <script src="{{ site.baseurl }}/js/dev.js"></script>
+{% endif %}

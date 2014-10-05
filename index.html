@@ -1,0 +1,44 @@
+---
+layout: default
+title: Vera Bothe Test
+description: Pferdeosteopathin Vera Stahl
+navname: Frontpage
+---
+
+{% include hero.html %}
+
+<main>
+
+  <div class="site-width">
+
+      <article class="article">
+
+        <div class="meta">
+          <div class="banner">
+            Kurz vorgestellt
+          </div>
+          <br>
+        </div>
+
+        <h2>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h2>
+
+        <div class="article-text">
+          <p>Vera Stahl (geb. Bothe), Dipl. Physiotherapeutin, Pferdeosteopathin (DIPO) und dazu leidenschaftliche Reiterin. Gerne können Sie sich auf diesen Seiten Informationen zu meinem Beruf und meiner mobilen Praxis einholen. </p>
+        </div>
+
+        <a href="{{ post.url }}" class="read-more">
+          Read More
+          <svg>
+            <use xlink:href="#shape-triangle-right" />
+          </svg>
+        </a>
+
+      </article>
+
+  </div>
+
+</main>
